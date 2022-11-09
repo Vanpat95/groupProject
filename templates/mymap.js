@@ -29,11 +29,11 @@ var regions = [
   {
     location: [28.686362, 34.520106],
     yr2000: {
-      name:"Western Asia (Arab World)",
+      name:"Western Asia",
       emissions:3.16330493711316
     },
     latest: {
-      name: "Western Asia (Arab World)",
+      name: "Western Asia",
       emissions:4.438715965413571
     }
   },
@@ -134,8 +134,8 @@ for (var i = 0; i < regions.length; i++) {
     L.circle(regions[i].location, {
       stroke: false,
       fillOpacity: 0.8,
-      color: "grey",
-      fillColor: "grey",
+      color: "green",
+      fillColor: "green",
       radius: markerSize(regions[i].yr2000.emissions)
     })
   );
